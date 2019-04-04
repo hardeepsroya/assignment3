@@ -111,6 +111,28 @@ namespace ConsoleApp1
 
 
 
+        public void Sorter()
+        {
+
+            // TO DO : sort the Queue 
+            q1.Enqueue("Java-SAT-AM-A202");
+            q1.Enqueue("Csharp-MON-PM-B122");
+            q1.Enqueue("Math-FRI-AM-A506");
+            q1.Enqueue("BigData-THU-B230");
+            q1.Enqueue("Java-WED-PM-A2022");
+            q1.Enqueue("Csharp-THU-PM-B125");
+            q1.Enqueue("Math-TUE-AM-B130");
+            q1.Enqueue("EmergingTechnologies-FRI-B122");
+            q1.Enqueue("MicrosoftDataStack-MON-PM-B122");
+            q1.Enqueue("Math-MON-PM-B122");
+            q1.Enqueue("Python-FRI-AM-B125");
+            q1.Enqueue("JavaEE-FRI-PM-B230");
+            q1.Enqueue("SignalProcessing-WED-PM-LAB1");
+            q1.Enqueue("EmbeddedProcessor");
+
+
+        }
+
 
 
         public void Run()
@@ -194,3 +216,60 @@ namespace ConsoleApp1
 
 
 
+namespace BubbleSort
+
+{
+
+    class MySort
+
+    {
+
+        static void Main2(string[] args)
+
+        {
+
+            int[] arr = { 78, 55, 45, 98, 13 };
+
+            int temp;
+
+
+
+            for (int j = 0; j <= arr.Length - 2; j++)
+
+            {
+
+                for (int i = 0; i <= arr.Length - 2; i++)
+
+                {
+
+                    if (arr[i] > arr[i + 1])
+
+                    {
+
+                        temp = arr[i + 1];
+
+                        arr[i + 1] = arr[i];
+
+                        arr[i] = temp;
+
+                    }
+
+                }
+
+            }
+
+
+
+            Console.WriteLine("Sorted:");
+
+            foreach (int p in arr)
+
+                Console.Write(p + " ");
+
+            Console.Read();
+
+        }
+
+    }
+
+}
